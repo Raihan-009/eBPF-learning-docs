@@ -16,6 +16,10 @@ This eBPF program simply prints "Hello World!" to the kernel's tracing subsystem
 - Need to trigger that event to trigger BPF program.
 - Need to reads out those traces (if any).
 
+## `Running bpf program at a glance`
+
+![Running bpf](https://github.com/Raihan-009/eBPF-learning-docs/blob/main/chapter2/running-bpf.png?raw=true)
+
 ## `User Space Code [ *.py Program ]`
 
 1. Making a bpf obejct with bpf program
@@ -37,3 +41,7 @@ Kprobes enables you to dynamically break into any kernel routine and collect deb
 ```python
 b.trace_print()
 ```
+***Expected Output***
+
+![hello world!](https://github.com/Raihan-009/eBPF-learning-docs/blob/main/chapter2/hello.png?raw=true)
+---
