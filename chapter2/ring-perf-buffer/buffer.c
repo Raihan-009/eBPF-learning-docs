@@ -7,8 +7,6 @@ struct data_t {
    char message[12];
 };
 
-BPF_HASH(counter_table);
- 
 int hello(void *ctx) {
    struct data_t data = {}; 
    char message[12] = "Hello World";
