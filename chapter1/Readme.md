@@ -16,17 +16,17 @@ Some key points about eBPF features
 - Networking with visibility
 - Detecting and Preventing malicious activity
 
-![ebpf.png](https://github.com/Raihan-009/eBPF-learning-docs/blob/main/chapter1/ebpf.png?raw=true)
+![ebpf.png](https://github.com/Raihan-009/eBPF-learning-docs/blob/main/chapter1/diagrams/ebpf.png?raw=true)
 
 ## *Linux Kernel Space and User Space*
 
 ***The Linux kernel*** serves as an intermediary between applications and hardware, facilitating functions like file access, networking, and process management, allowing multiple applications to run concurrently.
 
-![kernel.png](https://github.com/Raihan-009/eBPF-learning-docs/blob/main/chapter1/kernel.png?raw=true)
+![kernel.png](https://github.com/Raihan-009/eBPF-learning-docs/blob/main/chapter1/diagrams/kernel.png?raw=true)
 
 ***User space*** refers to the area of a computer's memory where user applications and processes run. Basically applications run in user space, unable to directly access hardware. They makes requests using the system call (syscall) interface to request the kernel to act on its behalf.
 
-![user-space.png](https://github.com/Raihan-009/eBPF-learning-docs/blob/main/chapter1/user-space.png?raw=true)
+![user-space.png](https://github.com/Raihan-009/eBPF-learning-docs/blob/main/chapter1/diagrams/user-space.png?raw=true)
 
 ## *Adding New Functionality to the Kernel*
 
