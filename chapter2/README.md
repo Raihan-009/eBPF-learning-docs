@@ -9,7 +9,7 @@ In each example, the code will be divided into two parts: kernel space and user 
 
 ## `Running bpf program at a glance`
 
-![Running BPF](https://github.com/Raihan-009/eBPF-learning-docs/blob/main/chapter2/diagrams/running-bpf.png?raw=true)
+![Running BPF](https://github.com/Raihan-009/eBPF-learning-docs/blob/main/chapter2/00-bpf-diagrams/running-bpf.png?raw=true)
 
 # Example01: Running Hello World!
 
@@ -58,7 +58,7 @@ b.trace_print()
 
 ***Expected Output!!***
 
-![Running hello.py](https://github.com/Raihan-009/eBPF-learning-docs/blob/main/chapter2/diagrams/hello.png?raw=true)
+![Running hello.py](https://github.com/Raihan-009/eBPF-learning-docs/blob/main/chapter2/00-bpf-diagrams/hello.png?raw=true)
 
 ---
 
@@ -110,6 +110,6 @@ Here, this Python script continuously queries the **`counter_table`** hash table
 
 ***Expected Output!!***
 
-![Running hello-map.py](https://github.com/Raihan-009/eBPF-learning-docs/blob/main/chapter2/diagrams/hello-map.png?raw=true)
+![Running hello-map.py](https://github.com/Raihan-009/eBPF-learning-docs/blob/main/chapter2/00-bpf-diagrams/hello-map.png?raw=true)
 
 ---
