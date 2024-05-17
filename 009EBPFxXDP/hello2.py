@@ -11,6 +11,6 @@ while True:
     s = ""
     for k, v in b["comm_counter"].items():
         if v.uid == 0:
-            s += f"X : {k.value}, PID : {v.pid}, UID : {v.uid}, COUNT : {v.count}\n"
+            s += f"X : {k.value}, PID : {v.pid}, UID : {v.uid}, COUNT : {v.count}, COMMAND : {v.command.decode()}\n"
     if s:  # Only print if s is not empty
         print(s)
