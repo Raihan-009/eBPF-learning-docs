@@ -31,7 +31,7 @@ int counter_map(void *ctx) {
     bpf_trace_printk("User  Founded!");
    }
    counter++;
-   (*p).count = counter;
+   user_i.count = counter;
     comm_counter.update(&X, &user_i);
    return 0;
 }
