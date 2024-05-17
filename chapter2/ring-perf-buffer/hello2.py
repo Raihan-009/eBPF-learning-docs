@@ -9,6 +9,8 @@ b.attach_kprobe(event=syscall, fn_name="counter_map")
 while True:
     sleep(2)
     s = ""
-    for k,v in b["comm_counter"].items():
-        s += f"ID {k.value}: {v.value}\t"
-    print(s)
+    for k, v in b["comm_counter"].items():
+        if k.value == 0:
+            s += f"ID {k.value}: {v.value}\t"
+    if s:  # Only print if s is not empty
+        print(s)
