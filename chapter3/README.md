@@ -5,7 +5,7 @@ Created time: May 18, 2024 11:52 AM
 
 # `eBPF anatomy at a glance!`
 
-![e-BPF.png](https://github.com/Raihan-009/eBPF-learning-docs/blob/feature/chapter3Doc/chapter3/diagrams/e-BPF.png?raw=true)
+![e-BPF.png](https://github.com/Raihan-009/eBPF-learning-docs/blob/main/chapter3/diagrams/e-BPF.png?raw=true)
 
 # Anatomy of an eBPF Program
 
@@ -70,7 +70,7 @@ llvm-objdump -S xdp_pass.o
 
 ***Expected Output:***
 
-![inspecting.png](https://github.com/Raihan-009/eBPF-learning-docs/blob/feature/chapter3Doc/chapter3/diagrams/inspecting.png?raw=true)
+![inspecting.png](https://github.com/Raihan-009/eBPF-learning-docs/blob/main/chapter3/diagrams/inspecting.png?raw=true)
 
 ### ***Loading Program into the Kernel***
 
@@ -100,7 +100,7 @@ sudo bpftool prog show id 71 --pretty
 
 ***Expected Output:***
 
-![prog-show.png](https://github.com/Raihan-009/eBPF-learning-docs/blob/feature/chapter3Doc/chapter3/diagrams/prog-show.png?raw=true)
+![prog-show.png](https://github.com/Raihan-009/eBPF-learning-docs/blob/main/chapter3/diagrams/prog-show.png?raw=true)
 
 ### ***Attaching an Event***
 
@@ -112,8 +112,7 @@ sudo bpftool net attach xdp id 71 dev veth0
 
 ***Expected Output:***
 
-![attach.png](https://github.com/Raihan-009/eBPF-learning-docs/blob/feature/chapter3Doc/chapter3/diagrams/attach.png?raw=true)
-
+![attach.png](https://github.com/Raihan-009/eBPF-learning-docs/blob/main/chapter3/diagrams/attach.png?raw=true)
 ### ***Detaching and Unloading***
 
 To detach and unload the eBPF program, use:
